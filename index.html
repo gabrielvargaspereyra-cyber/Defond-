@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEFOND — Yerba Mate Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- PANTALLA DE ENTRADA (SPLASH)                    -->
+<!-- ============================================= -->
+<section id="splash">
+  <div class="splash-inner">
+    <svg class="splash-leaf" viewBox="0 0 100 100" width="34" height="34" aria-hidden="true">
+      <path d="M50 8 C 70 20, 82 40, 78 62 C 76 76, 64 88, 50 92 C 36 88, 24 76, 22 62 C 18 40, 30 20, 50 8 Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="50" y1="14" x2="50" y2="88" stroke="currentColor" stroke-width="1"/>
+    </svg>
+    <h1 class="splash-word">DEFOND</h1>
+    <p class="splash-tag">Yerba mate despalada · Edición premium</p>
+    <button id="enterBtn" class="enter-btn" aria-label="Entrar al catálogo">
+      <span>Entrar</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </button>
+  </div>
+  <div class="splash-footer">Buenos Aires, Argentina</div>
+</section>
+
+<!-- ============================================= -->
+<!-- SITIO PRINCIPAL                                 -->
+<!-- ============================================= -->
+<div id="site">
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo">DEFOND</a>
+    <nav class="nav-links">
+      <a href="#yerbas">Yerbas</a>
+      <a href="#mates">Mates</a>
+      <a href="#bombillas">Bombillas</a>
+      <a href="#combos">Combos</a>
+      <a href="#devoluciones">Devoluciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-right">
+      <button class="cart-btn" id="cartBtn" aria-label="Ver carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6"/>
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="18" cy="21" r="1"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#yerbas">Yerbas</a>
+    <a href="#mates">Mates</a>
+    <a href="#bombillas">Bombillas</a>
+    <a href="#combos">Combos</a>
+    <a href="#devoluciones">Devoluciones</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <p class="hero-eyebrow">Despalada · Estacionada · Sin polvo</p>
+    <h2 class="hero-title">El mate,<br>llevado al detalle.</h2>
+    <p class="hero-copy">Seleccionamos yerba de origen, la despalamos a mano y armamos los sets que acompañan tu ronda. Sin vueltas, sin relleno.</p>
+    <a href="#yerbas" class="hero-cta">Ver catálogo</a>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1" y="6" width="15" height="12" rx="1"/><path d="M16 10h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="18.5" cy="18.5" r="1.8"/></svg>
+      <span>Envíos a todo el país</span>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+      <span>Cambios y devoluciones</span>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5z"/></svg>
+      <span>Pago 100% seguro</span>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4 8.3 8.3 0 0 1-4-1L3 20l1.1-5.6a8.3 8.3 0 0 1-1-4A8.4 8.4 0 0 1 11.5 2h.1a8.4 8.4 0 0 1 9.4 9.5z"/></svg>
+      <span>Atención por WhatsApp</span>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORÍA: YERBAS ===================== -->
+  <section id="yerbas" class="category">
+    <div class="category-head">
+      <span class="category-num">01</span>
+      <h3>Yerbas</h3>
+      <p>Despalada, suave y compuesta. Elegí tu perfil.</p>
+    </div>
+    <div class="grid" id="grid-yerbas"></div>
+  </section>
+
+  <!-- ===================== CATEGORÍA: MATES ===================== -->
+  <section id="mates" class="category alt">
+    <div class="category-head">
+      <span class="category-num">02</span>
+      <h3>Mates</h3>
+      <p>Piezas para todos los días, hechas para durar.</p>
+    </div>
+    <div class="grid" id="grid-mates"></div>
+  </section>
+
+  <!-- ===================== CATEGORÍA: BOMBILLAS ===================== -->
+  <section id="bombillas" class="category">
+    <div class="category-head">
+      <span class="category-num">03</span>
+      <h3>Bombillas</h3>
+      <p>Filtro de resorte, fáciles de limpiar.</p>
+    </div>
+    <div class="grid" id="grid-bombillas"></div>
+  </section>
+
+  <!-- ===================== CATEGORÍA: COMBOS ===================== -->
+  <section id="combos" class="category alt">
+    <div class="category-head">
+      <span class="category-num">04</span>
+      <h3>Combos</h3>
+      <p>Mate, bombilla y yerba, listos para arrancar.</p>
+    </div>
+    <div class="grid" id="grid-combos"></div>
+  </section>
+
+  <!-- ===================== FORMAS DE PAGO ===================== -->
+  <section class="payments">
+    <div class="category-head">
+      <span class="category-num">05</span>
+      <h3>Formas de pago</h3>
+      <p>Elegí la opción que más te convenga al finalizar tu compra.</p>
+    </div>
+    <div class="pay-grid">
+      <div class="pay-card">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <h5>Tarjetas de crédito y débito</h5>
+        <p>Todas las marcas, hasta en cuotas.</p>
+      </div>
+      <div class="pay-card">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4h16v4H4z"/><path d="M4 12h16v8H4z"/><path d="M9 16h6"/></svg>
+        <h5>Mercado Pago</h5>
+        <p>QR o link de pago, acreditación al instante.</p>
+      </div>
+      <div class="pay-card">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 10h18M7 15h.01M11 15h4"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+        <h5>Transferencia bancaria</h5>
+        <p>CBU o alias, te enviamos los datos al confirmar.</p>
+      </div>
+      <div class="pay-card">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <h5>Efectivo contra entrega</h5>
+        <p>Disponible en envíos dentro del AMBA.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEVOLUCIONES ===================== -->
+  <section id="devoluciones" class="returns">
+    <div class="category-head">
+      <span class="category-num">06</span>
+      <h3>Cambios y devoluciones</h3>
+      <p>Compralo tranquilo. Así de simple es el proceso.</p>
+    </div>
+    <div class="returns-grid">
+      <div class="returns-step">
+        <span class="returns-num">1</span>
+        <h5>Escribinos dentro de los 10 días</h5>
+        <p>Contactanos por WhatsApp o email desde que recibiste tu pedido.</p>
+      </div>
+      <div class="returns-step">
+        <span class="returns-num">2</span>
+        <h5>Coordinamos la devolución</h5>
+        <p>El producto tiene que estar sin uso y en su empaque original.</p>
+      </div>
+      <div class="returns-step">
+        <span class="returns-num">3</span>
+        <h5>Cambio o reembolso</h5>
+        <p>Elegís otro producto o te devolvemos el dinero por el mismo medio de pago.</p>
+      </div>
+    </div>
+    <p class="returns-note">La yerba abierta no admite devolución por motivos de higiene, salvo fallas de origen.</p>
+  </section>
+
+  <!-- ===================== INSTAGRAM ===================== -->
+  <section class="instagram">
+    <div class="category-head">
+      <span class="category-num">07</span>
+      <h3>Seguinos en Instagram</h3>
+      <p><a href="https://instagram.com/defond.mate" target="_blank" rel="noopener">@defond.mate</a></p>
+    </div>
+    <div class="insta-grid">
+      <a class="insta-item" href="https://instagram.com/defond.mate" target="_blank" rel="noopener" style="background-image:url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=60')"></a>
+      <a class="insta-item" href="https://instagram.com/defond.mate" target="_blank" rel="noopener" style="background-image:url('https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=500&q=60')"></a>
+      <a class="insta-item" href="https://instagram.com/defond.mate" target="_blank" rel="noopener" style="background-image:url('https://images.unsplash.com/photo-1550505095-6efcc8a7e5c4?w=500&q=60')"></a>
+      <a class="insta-item" href="https://instagram.com/defond.mate" target="_blank" rel="noopener" style="background-image:url('https://images.unsplash.com/photo-1615486364566-9db1f7b4bcbd?w=500&q=60')"></a>
+    </div>
+    <a href="https://instagram.com/defond.mate" target="_blank" rel="noopener" class="insta-follow">Seguir en Instagram</a>
+  </section>
+
+  <!-- CONTACTO / FOOTER -->
+  <footer id="contacto" class="footer">
+    <div class="footer-top">
+      <h3>DEFOND</h3>
+      <p>Yerba mate despalada, premium, sin vueltas.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://instagram.com/defond.mate" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/549XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:hola@defond.com">hola@defond.com</a>
+    </div>
+    <p class="footer-copy">© 2026 DEFOND. Todos los derechos reservados.</p>
+  </footer>
+
+</div>
+
+<!-- ===================== CARRITO (DRAWER) ===================== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h4>Tu carrito</h4>
+    <button id="cartClose" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">Todavía no agregaste nada.</p>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <span id="cartTotal">$0</span>
+    </div>
+    <button class="checkout-btn" id="checkoutBtn">Finalizar por WhatsApp</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
